@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BookMarker</title>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:wght@300&family=Righteous&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/index_style.css">
+    </head>
+    <body class="bg-dark text-white">
+        <div class="container py-5 ">
+            <div class="text-center pb-5">
+                <h1 class="fw-medium y display-4">Bookmarker</h1>
+            </div>
+
+            <div class="y" >
+                <i class="fa-solid fa-2x d-inline-block fa-bookmark"></i>
+                <p class="d-inline-block fs-3">Bookmark your favorite sites</p>
+                <i class="fa-solid fa-2x d-inline-block fa-bookmark"></i>
+            </div>
+
+            <form class="x py-3">
+                <label for="siteName" class="px-1">
+                    <i class="fa-solid fa-book-bookmark"></i>
+                    <p class="d-inline-block">Site Name</p>
+                </label>
+                <input type="text" class="form-control" name="" id="siteName">
+
+                <label for="url" class="px-1 pt-3">
+                    <i class="fa-solid fa-link"></i>
+                    <p class="d-inline-block">URL</p>
+                </label>
+                <input type="text" class="form-control" name="" id="url">
+
+                <button onclick="setData()" class="btn btn-danger my-4 px-5">Submit</button>
+            </form>
+
+            <div>
+                <table class="table my-3  text-center">
+                    <thead>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody id="tableBody">
+
+                    </tbody>
+                </table>
+            </div>
+
+
+
+
+
+
+        <script src="js/mine.js"></script>
+    </body>
+</html>
